@@ -18,3 +18,16 @@ blocks:
             - cache restore
             - go mod vendor
             - cache store
+  - name: Tests
+    task:
+      jobs:
+        - name: Unit tests
+          commands:
+            - go test ./...
+  - name: Build
+    task:
+      jobs:
+        - name: Build
+          commands:
+            - go build -v -o go-gin-app
+            - artifact push project --force go-gin-app
