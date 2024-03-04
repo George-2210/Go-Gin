@@ -1,4 +1,4 @@
-module github.com/themeilin/hellogo
+module github.com/George-2210/semaphore-demo-go-gin
 
 go 1.22.0
 

@@ -1,0 +1,18 @@
+<!--index.html-->
+
+<!-- 在此位置嵌入 header.html 模板 -->
+{{ template "header.html" . }}
+
+  <!-- 循环遍历 payload 变量，它是文章列表 -->
+  {{ range .payload }}
+    <!-- 基于文章的 ID 创建链接 -->
+    <a href="/article/view/{{ .ID }}">
+      <!-- 显示文章标题 -->
+      <h2>{{ .Title }}</h2>
+    </a>
+    <!-- 显示文章内容 -->
+    <p>{{ .Content }}</p>
+  {{ end }}
+
+<!-- 在此位置嵌入 footer.html 模板 -->
+{{ template "footer.html" . }}

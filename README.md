@@ -1,1 +1,0 @@
-本项目根据教程(https://semaphoreci.com/community/tutorials/building-go-web-applications-and-microservices-using-gin)
